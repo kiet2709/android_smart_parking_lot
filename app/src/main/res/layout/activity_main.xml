@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.MainActivity">
+
+    <include layout="@layout/action_bar"/>
+
+    <LinearLayout
+        android:weightSum="10"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_weight="2.5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="7dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:textSize="23sp"
+                    android:textStyle="bold"
+                    android:text="Biển số xe: " />
+                <TextView
+                    android:id="@+id/txt_license_plate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:textSize="23sp"
+                    android:text="61-C1 12345" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="7dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:textSize="23sp"
+                    android:textStyle="bold"
+                    android:text="Số thẻ giữ xe: " />
+                <TextView
+                    android:id="@+id/txt_card_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:textSize="23sp"
+                    android:text="12345" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="7dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:textSize="23sp"
+                    android:textStyle="bold"
+                    android:text="Hàng để xe: " />
+                <TextView
+                    android:id="@+id/txt_locate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:textSize="23sp"
+                    android:text="Số 1" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="7.5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <ImageView
+                android:id="@+id/img_locate"
+                android:layout_width="match_parent"
+                android:src="@drawable/mapui"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>
